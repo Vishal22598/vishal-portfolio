@@ -7,7 +7,7 @@ const Education = () => {
       degree: 'Diploma in Advanced Computing (DAC)',
       institution: 'Centre for Development of Advanced Computing (C-DAC), Pune',
       duration: 'Feb 2025 – Aug 2025',
-      percentage: '76%',
+      percentage: '75%',
       isOngoing: true
     },
     {

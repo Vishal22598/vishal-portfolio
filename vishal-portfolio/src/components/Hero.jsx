@@ -1,5 +1,5 @@
-import { Container, Button } from 'react-bootstrap'
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { Container, Button, Row, Col } from 'react-bootstrap'
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaDownload } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
 const Hero = () => {
@@ -7,6 +7,19 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <Container>
         <div className="hero-content">
+          {/* Profile Image */}
+          <div className="hero-image-wrapper" data-aos="zoom-in">
+            <div className="hero-image-container">
+              <img 
+                src="/profile.jpg" 
+                alt="Vishal Gupta img" 
+                className="hero-image"
+              />
+              <div className="hero-image-border"></div>
+            </div>
+          </div>
+
+          {/* Content */}
           <h1 className="hero-title">Vishal Gupta</h1>
           <h2 className="hero-subtitle">Software Developer | Full Stack Developer</h2>
           <p className="hero-description">
@@ -24,6 +37,11 @@ const Hero = () => {
                 View Projects
               </Button>
             </Link>
+            <a href="/resume.pdf" download className="btn-download-wrapper">
+              <Button className="btn-hero btn-hero-download">
+                <FaDownload /> Resume
+              </Button>
+            </a>
           </div>
 
           <div className="social-links">
